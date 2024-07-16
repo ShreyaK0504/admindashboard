@@ -8,9 +8,16 @@ import React, { useEffect, useState } from 'react'
 
 type Props = {}
 
+type Category = {
+    id: string;
+    name: string;
+    image: string;
+}
+
+
 
 export default function page({ }: Props) {
-    const [categories, setCategories] = useState([]);
+    const [categories, setCategories] = useState<Category[]>([]);
 
     useEffect(() => {
 
