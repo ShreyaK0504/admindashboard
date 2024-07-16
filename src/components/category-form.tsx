@@ -36,11 +36,11 @@ export function CategoryForm() {
       <CardContent className="space-y-4">
         <div className="grid gap-2">
           <label htmlFor="name">Name</label>
-          <Input id="name" value={name} onChange={(e: any) => setName(e.target.value)} placeholder="Enter the category name" />
+          <input id="name" value={name} onChange={(e: any) => setName(e.target.value)} placeholder="Enter the category name" />
         </div>
         <div className="grid gap-2">
           <label htmlFor="image">Image</label>
-          <Input value={image} onChange={(e: any) => setImage(e.target.value)} placeholder="Enter Image url" />
+          <input value={image} onChange={(e: any) => setImage(e.target.value)} placeholder="Enter Image url" />
         </div>
 
       </CardContent>
